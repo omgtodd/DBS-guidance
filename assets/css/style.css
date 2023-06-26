@@ -1,8 +1,20 @@
 body{
-    font-family:Arial;
+    font-family:Arial, Helvetica, sans-serif;
     margin:0;
     padding:0;
+    font-color:purple;
+    font-weight:300px;
     background:rgb(255, 255, 255);
+ }
+
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-color:purple;
+}
+
+ #logo {
+  float:left;
+  margin-left: 40px;
  }
 
  #hero-outer {
@@ -35,7 +47,7 @@ body{
    padding-top: 40px;
    padding-left: 10px;
 
-   background-color:rgb(0, 0, 255, .5);
+   background-color:rgba(255, 232, 26, .3);
 
    bottom: 30px;
    left: 150px;
@@ -43,53 +55,13 @@ body{
    position:absolute;
    }
 
- /* navigation diamonds */
+ /* Navigation tabs */
 
- .navigation {
-   display:flex;
-   column-gap:20px;
-   width: 50%;
-   height:200px;
-   margin:auto;
- }
+ .navigation div {
+  display: none;
+}
 
- .diamond1 {
-   width:200px;
-   height:200px;
-   border-style:solid;
-   border-width: 5px;
-   border-color:purple;
-   background:url(../images/question.jpg);
-   background-size:cover;
-   
- }
+.navigation div:target {
+  display: block;
 
- .diamond2 {
-   width:200px;
-   height:200px;
-   border-style:solid;
-   border-width: 5px;
-   border-color:purple;
-   background:url(../images/person.jpg);
-   background-size:cover;
- }
-
- .diamond3 {
-   width:200px;
-   height:200px;
-   border-style:solid;
-   border-width: 5px;
-   border-color:purple;
-   background:url(../images/pencil.jpg);
-   background-size:cover;
- }
-
- .diamond4 {
-   width:200px;
-   height:200px;
-   border-style:solid;
-   border-width: 5px;
-   border-color:purple;
-   background:url(../images/tick.jpg);
-   background-size:cover;
- }
+}
