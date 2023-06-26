@@ -2,7 +2,14 @@ body{
     font-family:Arial;
     margin:0;
     padding:0;
-    background:rgb(241, 237, 213);
+    background:rgb(255, 255, 255);
+ }
+
+ #hero-outer {
+   height:600px;
+   width:100%;
+   overflow:hidden;
+   position:relative;
  }
 
  /* Hero image */
@@ -15,44 +22,74 @@ body{
    background-position:center;
  }
 
+/* Cover text */
+
+#cover-text {
+   color:purple;
+   font-size:130%;
+   font-family: arial;
+   letter-spacing: 4px;
+
+   width: 300px;
+   height:200px;
+   padding-top: 40px;
+   padding-left: 10px;
+
+   background-color:rgb(0, 0, 255, .5);
+
+   bottom: 30px;
+   left: 150px;
+
+   position:absolute;
+   }
+
  /* navigation diamonds */
 
- ul {
-    width:600px;
-    height:150px;
-    margin:0 auto;
-    transform:translate(-50%,-50%);
+ .navigation {
+   display:flex;
+   column-gap:20px;
+   width: 50%;
+   height:200px;
+   margin:auto;
  }
 
- Ul li {
-    list-style: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background:black;
-    transform: rotate(45deg);
-    margin: -100px;
-    overflow: hidden;
-    opacity: .7;
-    transition: .5s;
+ .diamond1 {
+   width:200px;
+   height:200px;
+   border-style:solid;
+   border-width: 5px;
+   border-color:purple;
+   background:url(../images/question.jpg);
+   background-size:cover;
+   
  }
 
- ul li.diamond-1 {
-    top:0;
-    left:0%;
+ .diamond2 {
+   width:200px;
+   height:200px;
+   border-style:solid;
+   border-width: 5px;
+   border-color:purple;
+   background:url(../images/person.jpg);
+   background-size:cover;
  }
 
- ul li.diamond-2 {
-    bottom:0;
-    left:25%;
+ .diamond3 {
+   width:200px;
+   height:200px;
+   border-style:solid;
+   border-width: 5px;
+   border-color:purple;
+   background:url(../images/pencil.jpg);
+   background-size:cover;
  }
 
- ul li.diamond-3 {
-    top:0%;
-    left:50%;
- }
-
- ul li.diamond-4 {
-    bottom:0%;
-    left:75%;
+ .diamond4 {
+   width:200px;
+   height:200px;
+   border-style:solid;
+   border-width: 5px;
+   border-color:purple;
+   background:url(../images/tick.jpg);
+   background-size:cover;
  }
